@@ -7,9 +7,9 @@ class Bot {
 private:
 	sf::RectangleShape bot;
 
-	float width = 25.f;
-	float height = 200.f;
-	float offset = 70.f;
+	const float width = 25.f;
+	const float height = 200.f;
+	const float offset = 70.f;
 
 	float posX, posY;
 public:
@@ -19,7 +19,7 @@ public:
 	void play(Ball ball);
 
 	sf::RectangleShape get_shape() const {
-		return bot;
+		return this->bot;
 	}
 
 	float get_posY() {

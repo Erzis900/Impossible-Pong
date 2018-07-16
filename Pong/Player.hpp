@@ -5,8 +5,8 @@ class Player {
 private:
 	sf::RectangleShape player;
 
-	float width = 25;
-	float height = 200;
+	const float width = 25.f;
+	const float height = 200.f;
 
 	float posX, posY;
 public:
@@ -23,4 +23,3 @@ public:
 		return this->posY;
 	}
 };
-

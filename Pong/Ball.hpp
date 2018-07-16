@@ -9,7 +9,7 @@ class Ball {
 private:
 	sf::CircleShape ball;
 
-	float radius = 30.f;
+	const float radius = 30.f;
 
 	float posX, posY;
 	float velX = 6.f;
